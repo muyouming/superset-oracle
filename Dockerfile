@@ -23,4 +23,4 @@ RUN echo '/usr/local/instantclient/' | tee -a /etc/ld.so.conf.d/oracle_instant_c
 
 RUN apt-get install libaio-dev libsasl2-dev libldap2-dev -y && apt-get clean -y
 
-RUN pip install -i http://pypi.douban.com/simple/ --trusted-host=pypi.douban.com/simple  --no-cache-dir cx_Oracle 
+RUN pip install -i http://pypi.douban.com/simple/ --trusted-host=pypi.douban.com/simple  --no-cache-dir cx_Oracle  werkzeug==0.16.0
